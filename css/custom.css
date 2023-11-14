@@ -1,0 +1,23 @@
+.circle{
+  height: 426px;
+  width: 426px;
+  background: radial-gradient(circle at 100px 100px, #697ebc, #173eb3);
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 426px;
+  text-align: center;
+  font-size: 250px;
+  color: white;
+  animation: slide-up 1.0s ease;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0.5;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
