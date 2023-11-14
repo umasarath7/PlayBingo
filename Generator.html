@@ -1,0 +1,78 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Welcome to Bingo Game!</title>
+    <style>
+        table, tr, th, td {
+            border: 1px solid black;
+            table-layout: fixed;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="display-4">Lets Play Bingo!</h1>
+                </div>
+                <div class="col-md-2">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="bingo-machine" data-number="-1">
+                    <img class="img-fluid" src="img/initial-machine.jpg">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-primary btn-lg" onclick="bingo()" id="bingButton">Get next number!</button>
+                <hr>
+                <h4>Previous numbers</h4>
+                <table id="BingoTable">
+                    <tr><td id="num1"></td><td id="num2"></td><td id="num3"></td><td id="num4"></td><td id="num5"></td><td id="num6"></td><td id="num7"></td><td id="num8"></td><td id="num9"></td><td id="num10"></td></tr>
+                    <tr><td id="num11"></td><td id="num12"></td><td id="num13"></td><td id="num14"></td><td id="num15"></td><td id="num16"></td><td id="num17"></td><td id="num18"></td><td id="num19"></td><td id="num20"></td></tr>
+                    <tr><td id="num21"></td><td id="num22"></td><td id="num23"></td><td id="num24"></td><td id="num25"></td><td id="num26"></td><td id="num27"></td><td id="num28"></td><td id="num29"></td><td id="num30"></td></tr>
+                    <tr><td id="num31"></td><td id="num32"></td><td id="num33"></td><td id="num34"></td><td id="num35"></td><td id="num36"></td><td id="num37"></td><td id="num38"></td><td id="num39"></td><td id="num40"></td></tr>
+                    <tr><td id="num41"></td><td id="num42"></td><td id="num43"></td><td id="num44"></td><td id="num45"></td><td id="num46"></td><td id="num47"></td><td id="num48"></td><td id="num49"></td><td id="num50"></td></tr>
+                    <tr><td id="num51"></td><td id="num52"></td><td id="num53"></td><td id="num54"></td><td id="num55"></td><td id="num56"></td><td id="num57"></td><td id="num58"></td><td id="num59"></td><td id="num60"></td></tr>
+                    <tr><td id="num61"></td><td id="num62"></td><td id="num63"></td><td id="num64"></td><td id="num65"></td><td id="num66"></td><td id="num67"></td><td id="num68"></td><td id="num69"></td><td id="num70"></td></tr>
+                    <tr><td id="num71"></td><td id="num72"></td><td id="num73"></td><td id="num74"></td><td id="num75"></td><td id="num76"></td><td id="num77"></td><td id="num78"></td><td id="num79"></td><td id="num80"></td></tr>
+                    <tr><td id="num81"></td><td id="num82"></td><td id="num83"></td><td id="num84"></td><td id="num85"></td><td id="num86"></td><td id="num87"></td><td id="num88"></td><td id="num89"></td><td id="num90"></td></tr>
+                    <tr><td id="num91"></td><td id="num92"></td><td id="num93"></td><td id="num94"></td><td id="num95"></td><td id="num96"></td><td id="num97"></td><td id="num98"></td><td id="num99"></td><td id="num100"></td></tr>
+                </table>
+                <ul hidden class="list-group" id="pres-numbers" aria-hidden="true">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br />
+    <br />
+    <p style="text-align:center">No Copyright</p>
+    <br />
+    <br />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bingo.js"></script>
+</body>
+</html>
